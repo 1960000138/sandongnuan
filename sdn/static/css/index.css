@@ -9,7 +9,7 @@
         }
 
         a:hover {
-            color: blue;
+            color: red;
         }
 
         .indexpage {
@@ -47,19 +47,48 @@
             display: inline-block;
         }
 
-        .bg {
+        .bg_c {
+            height: 700px;
             width: 1400px;
-            height: 632px;
             margin-top: 60px;
-            background-image: url("../images/bg.png");
-            color: rgb(255, 255, 255);
+            overflow: hidden;
+            position: relative;
+        }
+
+        .bg {
+            height: 700px;
+        }
+
+        .bg>li {
+            float: left;
+            list-style: none;
         }
 
         .bg_content {
-            width: 800px;
+            width: 200%;
             height: 400px;
             padding-top: 200px;
-            padding-left: 350px;
+        }
+
+        .bg_c ol {
+            position: absolute;
+            right: 30px;
+            bottom: 30px;
+        }
+
+        .bg_c ol li {
+            position: relative;
+            float: left;
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            color: #fff;
+            text-align: center;
+            margin-right: 15px;
+            font-size: 20px;
+            cursor: pointer;
+            line-height: 40px;
+            background: black;
         }
 
         .sdn {
@@ -210,6 +239,7 @@
 
         .whydo_right {
             width: 600px;
+            height: 100%;
             float: right;
             margin-top: 90px;
             margin-right: 50px;
@@ -256,6 +286,13 @@
             float: left;
         }
 
+        .gsry_content {
+            font-size: 20px;
+            height: 500px;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            margin-top: 40px;
+        }
+
         .sdn_buttom {
             width: 100%;
             margin-top: 230px;
@@ -268,7 +305,7 @@
             clear: both;
             width: 360px;
             margin: 0 auto;
-            padding-top: 10px;
+            padding-top: 50px;
         }
 
         .b_center {
@@ -287,8 +324,9 @@
         }
 
         .lxwm {
-            width: 800px;
+            width: 1200px;
             margin: 0 auto;
+            color: dimgray;
         }
 
         .lxwm>p {
@@ -298,8 +336,32 @@
         .lxwm_left {
             float: left;
             font-size: 18px;
+            text-align: left;
+            margin-top: 30px;
         }
 
         .whydo_txt {
             font-weight: none;
+        }
+
+        .lxwn_center {
+            float: left;
+            padding-top: 8px;
+            font-size: 18px;
+            text-align: left;
+            margin-left: 30%;
+            margin-top: 30px;
+        }
+
+        .lxwn_center>p>img {
+            text-align: center;
+            height: 30px;
+        }
+
+        .lxwn_center>p {
+            margin-top: 10px;
+        }
+
+        .first-li {
+            background: red;
         }

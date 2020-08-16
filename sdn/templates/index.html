@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>上海三冬暖供应链管理有限公司</title>
     <link href="{% static 'css/index.css' %}" rel="stylesheet" type="text/css">
-    <script type="text/javascript" src="/js/jquery.min.js"></script>
+    <script type="text/javascript" src="{% static 'js/sdn.js' %}"></script>
 
 
 </head>
@@ -32,17 +32,26 @@
                     </a>
                 </ul>
             </div>
-            <div class="bg">
-                <div class="bg_content">
-                    <p>
-                        <span style="font-size: 60px; font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; margin-bottom: 20px;">三冬暖供应链</span>
-                        <br>
-                        <span style="font-size: 40px; font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;">专业的新零售品牌产品供应链</span>
-                    </p>
-                    <p style="width: 250px; height: 35px; color:white; line-height: 35px; background-color: rgb(223, 164, 56); padding-left: 5px; margin-top: 30px; font-size: 20px;">
-                        <a href="https://maibas.taobao.com/index.htm?spm=a1z10.1-c.w5002-17767300277.2.537211bewkCfmj">进入商城查看所有 > > ></a>
-                    </p>
-                </div>
+            <div class="bg_c" id="broadcast">
+                <ul class="bg" id="img_list">
+                    <li><img src="{% static 'images/bg.png' %}" alt="1"></li>
+                    <li><img src="{% static 'images/bg01.png' %}" alt="2"></li>
+                </ul>
+                <ol id="button_list">
+                    <!-- 轮播按钮 -->
+                    <li class="first-li" id="olli1">1</li>
+                    <li id="olli2">2</li>
+                </ol>
+                <!--                <div class="bg_content">-->
+                <!--                    <p>-->
+                <!--                        <span style="font-size: 60px; font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; margin-bottom: 20px;">三冬暖供应链</span>-->
+                <!--                        <br>-->
+                <!--                        <span style="font-size: 40px; font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;">专业的新零售品牌产品供应链</span>-->
+                <!--                    </p>-->
+                <!--                    <p style="width: 280px; height: 35px; line-height: 35px; background-color: rgb(223, 164, 56); padding-left: 5px; margin-top: 30px; font-size: 20px;">-->
+                <!--                        <a href="#">进入商城查看所有 > > ></a>-->
+                <!--                    </p>-->
+                <!--                </div>-->
             </div>
             <!-- 品牌介绍 -->
             <div class="sdn" id="ppjs">
@@ -65,23 +74,23 @@
             <div class="cptj" id="cptj">
                 <div class="wmdcp">
                     <span style="font-size: 20px; width: 240px; margin-top: 80px; font-weight: bold; border-bottom: 8px solid #fdb22e; color: white;">我们的产品</span>
-                    <a href="https://maibas.taobao.com/index.htm?spm=a1z10.5-c.w5002-17767300277.2.416e1c4cgF7w1O" class="c_t_r">进入商城查看全部>>></a>
+                    <a href="https://shop46317634.m.youzan.com/wscshop/showcase/homepage?kdt_id=46125466" class="c_t_r">进入商城查看全部>>></a>
                     <br><br>
                     <span style="color: rgb(170, 170, 170); font-size: 22px;">COOPERATION</span>
                     <ul class="cp_ul">
-                        <a href="https://item.taobao.com/item.htm?spm=a1z10.3-c.w4002-17767300301.13.4550709fcsm1kx&id=620122351660">
+                        <a href="https://shop46317634.m.youzan.com/wscgoods/detail/35z91lzw160ju">
                             <li><img src="{% static 'images/1-拷贝-2.png' %}"></li>
                         </a>
-                        <a href="https://item.taobao.com/item.htm?spm=a1z10.3-c.w4002-17767300301.73.4550709fcsm1kx&id=620137371289">
+                        <a href="https://shop46317634.m.youzan.com/wscgoods/detail/3eqn2i2n3qqyi">
                             <li><img src="{% static 'images/1-拷贝.png' %}"></li>
                         </a>
-                        <a href="https://item.taobao.com/item.htm?spm=a1z10.3-c.w4002-17767300301.70.4550709fcsm1kx&id=620121403835">
+                        <a href="https://shop46317634.m.youzan.com/wscgoods/detail/360hqaymjs9e2">
                             <li><img src="{% static 'images/1-拷贝-4.png' %}"></li>
                         </a>
-                        <a href="https://item.taobao.com/item.htm?spm=a1z10.3-c.w4002-17767300301.43.4550709fcsm1kx&id=619477004599">
+                        <a href="https://shop46317634.m.youzan.com/wscgoods/detail/3nrs848r93jai">
                             <li><img src="{% static 'images/1.png' %}"></li>
                         </a>
-                        <a href="https://item.taobao.com/item.htm?spm=a1z10.3-c.w4002-17767300301.46.4550709fcsm1kx&id=619595373392">
+                        <a href="https://shop46317634.m.youzan.com/wscgoods/detail/1ybj676rz1wh6">
                             <li><img src="{% static 'images/2.png' %}"></li>
                         </a>
                     </ul>
@@ -147,6 +156,32 @@
                     </div>
                 </div>
             </div>
+            <!-- 公司荣誉
+            <div class="sdn">
+                <div class="gsry_content">
+                    <div style="padding-top: 50px;">
+                        <span class="hzpp_span">公司荣誉</span>
+                        <p></p>
+                        <span style="color: rgb(170, 170, 170); font-size: 22px;">COMPANY HONOR</span>
+                        <br>
+                        <div class="hzpp_txt">
+                            <p>经过公司短短半年的飞速发展，公司已经为爱库存、贝店、甩甩宝宝、好食期、蘑菇街、团吧啦、小象优品、悟空百货、哈多多、福员爱、业主趣拼、嗨购校园、魔筷星选等多家平台供货，并获得了相当理想的业绩。</p>
+                            <p>与嗨团、肉团、微折购、联联周边游、梵大纯购、闺蜜SHOW、悟空掌柜、懂货团、班尼太太、 蚁团等社群团购提供供应链服务。</p>
+                        </div>
+                        <ul class="hzpp_right">
+                            <li><img src="{% static 'images/1_12.jpg' %}" alt=""></li>
+                            <li><img src="{% static 'images/1_13.jpg' %}" alt=""></li>
+                            <li><img src="{% static 'images/1_14.jpg' %}" alt=""></li>
+                            <li><img src="{% static 'images/1_15.jpg' %}" alt=""></li>
+                            <li><img src="{% static 'images/1_16.jpg' %}" alt=""></li>
+                            <li><img src="{% static 'images/1_17.jpg' %}" alt=""></li>
+                            <li><img src="{% static 'images/1_18.jpg' %}" alt=""></li>
+                            <li><img src="{% static 'images/1_19.jpg' %}" alt=""></li>
+                            <li><img src="{% static 'images/1_21.jpg' %}" alt=""></li>
+                        </ul>
+                    </div>
+                </div>
+            </div> -->
             <!-- 合作平台 -->
             <div class="sdn" id="hzpt">
                 <div class="hzpp_content">
@@ -173,17 +208,24 @@
                     </div>
                 </div>
             </div>
+
+            <!-- 联系我们--底部 -->
             <div class="sdn_buttom">
                 <div class="b_center">
                     <div class="lxwm">
                         <span class="hzpp_span">联系我们</span>
                         <p></p>
                         <div class="lxwm_left">
-                            <p><img src="{% static 'images/qq.png' %}">：1960000138</p>
-                            <p><img src="{% static 'images/weixin.png' %}">：libin770119</p>
-                            <p><img src="{% static 'images/tel.png' %}">：15998925799</p>
+                            <p><img src="{% static 'images/qq.png' %}">&nbsp;：1960000138</p>
+                            <p><img src="{% static 'images/weixin.png' %}">&nbsp;：libin770119</p>
+                            <p><img src="{% static 'images/tel.png' %}">&nbsp;：15998925799</p>
                         </div>
-                        <div style="padding-top: 30px; float: right;;"><img src="{% static 'images/二维码.png' %}">
+                        <div class="lxwn_center">
+                            <p><img src="{% static 'images/youxiang.png' %}">&nbsp;：sandongnuan@21cn.com</p>
+                            <p><img src="{% static 'images/wangzhi.png' %}">&nbsp;：www.sandongnuan.vip</p>
+                            <p><img src="{% static 'images/dizhi.png' %}">&nbsp;：上海市嘉定区金兰路333号</p>
+                        </div>
+                        <div style="padding-top: 30px; float: right;margin-top: 30px;"><img src="{% static 'images/二维码.png' %}">
                             <p>扫描二维码关注微信公众号</p>
                         </div>
 
